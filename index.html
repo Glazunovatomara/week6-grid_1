@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ru</title>
+    <style>
+        header{
+            display:grid;
+            justify-content: center;
+            background-color:#556b2f;
+            padding: 20px 10px;
+        }
+        p{
+            margin:0;
+        }
+        div{
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+        }
+        main{
+            display:grid;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 1.5fr 1fr 1fr;
+            background-color:#fff5a9;
+            padding: 10px;
+            gap: 10px;
+        }
+        .title_main{
+            display: grid;
+            justify-content: center;
+            align-items: center;
+            grid-column-start:1;
+            grid-column-end:3;
+        }
+        .section_main{
+            display: grid;
+            justify-content: center;
+            background-color: #ffec3e;
+            padding: 10px;
+        }
+        .section_main:nth-child(2){
+            grid-area:2/1/auto;
+        }
+        .section_main:nth-child(3){
+            grid-area: 2/2/auto;
+        }
+        .section_main:last-child{
+            grid-area: 3/1/auto/3;
+        }
+        aside{
+            display:grid;
+            justify-content: center;
+            background-color: #ff6b00;
+            padding: 10px;
+        }
+        footer{
+            display:grid;
+            grid-template-columns: repeat(4, 1fr);
+            background-color:#556b2f;
+            gap: 20px;
+            padding: 10px;
+        }
+        .section_footer{
+            display: grid;
+            justify-content: center;
+            background-color: #e1f1c4;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <p>[Шапка страницы]</p>
+    </header>
+    <div>
+        <main>
+            <p class="title_main">[Основная часть]</p>
+            <section class="section_main">[Еще 1]</section>
+            <section class="section_main">[Еще 2]</section>
+            <section class="section_main">[Еще 3]</section>
+        </main>
+        <aside>
+            <p>[Боковая часть]</p>
+        </aside>
+    </div>
+    <footer>
+        <section class="section_footer">[Секция футера 1]</section>
+        <section class="section_footer">[Секция футера 2]</section>
+        <section class="section_footer">[Секция футера 3]</section>
+        <section class="section_footer">[Секция футера 4]</section>
+    </footer>
+</body>
+</html>
